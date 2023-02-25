@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'videoG.apps.MagsConfig',
+    'videoG.apps.VideogConfig',
     'rest_framework',
     'corsheaders'
 ]

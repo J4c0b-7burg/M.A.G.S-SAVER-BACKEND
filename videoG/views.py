@@ -1,15 +1,15 @@
 from django.shortcuts import render
 
-from .models import Mags
+from .models import Videog
 from rest_framework import viewsets
 from rest_framework import permissions
-from .serializers import MagsSerializer
+from .serializers import VideogSerializer
 
 
-class MagsViewSet(viewsets.ModelViewSet):
+class VideogViewSet(viewsets.ModelViewSet):
     ## The Main Query for the index route
-    queryset = Mags.objects.all()
+    queryset = Videog.objects.all()
     # The serializer class for serializing output
-    serializer_class = MagsSerializer
+    serializer_class = VideogSerializer
     # optional permission class set permission level
     permission_classes = [permissions.AllowAny] #Coule be [permissions.IsAuthenticated]

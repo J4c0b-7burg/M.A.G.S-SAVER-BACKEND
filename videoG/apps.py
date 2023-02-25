@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MagsConfig(AppConfig):
+class VideogConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'mags'
+    name = 'videoG'
