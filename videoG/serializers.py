@@ -7,4 +7,4 @@ class VideogSerializer(serializers.HyperlinkedModelSerializer):
 
         model = Videog
 
-        fields = ['id', 'subject', 'details']
+        fields = ['id', 'title', 'rating', 'image','completed','notes',]
