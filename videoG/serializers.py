@@ -1,10 +1,10 @@
-from .models import Videog
+from .models import Mags
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 
-class VideogSerializer(serializers.HyperlinkedModelSerializer):
+class MagsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
 
-        model = Videog
+        model = Mags
 
         fields = ['id', 'title', 'rating', 'image','completed','notes',]

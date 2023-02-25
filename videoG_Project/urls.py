@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from videoG.views import VideogViewSet
+from videoG.views import MagsViewSet
 
 
 router = routers.DefaultRouter()
 
-router.register(r'Videog', VideogViewSet)
+router.register(r'Mags', MagsViewSet)
 
 
 urlpatterns = [
